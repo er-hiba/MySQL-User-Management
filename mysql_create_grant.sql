@@ -12,22 +12,6 @@ Query OK, 0 rows affected (0.02 sec)
 mysql> CREATE USER 'User4'@'localhost' IDENTIFIED BY 'Modep@sse4' ;
 Query OK, 0 rows affected (0.02 sec)
 
-mysql> SELECT user, host FROM mysql.user;
-+------------------+-----------+
-| user             | host      |
-+------------------+-----------+
-| hiba             | %         |
-| User1            | localhost |
-| User2            | localhost |
-| User3            | localhost |
-| User4            | localhost |
-| mysql.infoschema | localhost |
-| mysql.session    | localhost |
-| mysql.sys        | localhost |
-| root             | localhost |
-+------------------+-----------+
-9 rows in set (0.00 sec)
-
 mysql> select user, host from mysql.user
     -> where host = "localhost" ;
 +------------------+-----------+
